@@ -1,0 +1,152 @@
+{
+  "anatomy": {
+    "review_options": {
+      "videos": [
+        {
+          "id": "vid001",
+          "title": "Upper Limb Review",
+          "description": "Comprehensive review of upper limb anatomy for exams.",
+          "url": "https://youtube.com/example1",
+          "thumbnail": "images/upper_limb.jpg"
+        },
+        {
+          "id": "vid002",
+          "title": "Neuroanatomy Quick Review",
+          "description": "Key points in neuroanatomy for rapid revision.",
+          "url": "https://youtube.com/example2",
+          "thumbnail": "images/neuro.jpg"
+        }
+      ],
+      "exams": [
+        {
+          "id": "exam001",
+          "title": "Cardiovascular System Exam",
+          "questions_count": 50,
+          "url": "exams/cardio_exam.json",    
+          "isEnabled": true,
+           "isPremium": true
+
+        },
+        {
+          "id": "exam002",
+          "title": "Musculoskeletal Exam",
+          "questions_count": 40,
+          "url": "exams/musculoskeletal_exam.json"
+        }
+      ],
+      "practice_questions": [
+        {
+          "id": "pq001",
+          "title": "Head & Neck Questions",
+          "questions_count": 30,
+          "url": "questions/head_neck.json"
+        },
+        {
+          "id": "pq002",
+          "type": "quiz",
+          "title": "Abdomen Questions",
+          "questions_count": 35,
+          "url": "questions/abdomen.json"
+        }
+      ],
+      "flashcards": [
+        {
+          "id": "fc001",
+          "title": "Cranial Nerves Flashcards",
+          "cards_count": 12,
+          "url": "flashcards/cranial_nerves.json"
+        },
+        {
+          "id": "fc002",
+          "title": "Bones of Upper Limb",
+          "cards_count": 15,
+          "url": "flashcards/upper_limb_bones.json"
+        }
+      ]
+    },
+    "lectures": [
+      {
+        "id": "lec001",
+        "title": "Thorax Anatomy",
+        "url": "lectures/thorax.pdf",
+        "summary": "Includes heart, lungs, and great vessels.",
+        "keywords": ["heart", "lungs", "ribcage"]
+      },
+      {
+        "id": "lec002",
+        "title": "Abdomen & Pelvis",
+        "url": "lectures/abdomen.pdf",
+        "summary": "Digestive organs, vessels, and peritoneum anatomy.",
+        "keywords": ["liver", "stomach", "intestines", "peritoneum"]
+      }
+    ],
+    "images": [
+      {
+        "id": "img001",
+        "title": "Skull Anatomy",
+        "url": "images/skull.jpg",
+        "region": "Head & Neck"
+      },
+      {
+        "id": "img002",
+        "title": "Heart Anatomy",
+        "url": "images/heart.jpg",
+        "region": "Thorax"
+      }
+    ],
+    "dissection_videos": [
+      {
+        "id": "dv001",
+        "title": "Upper Limb Dissection",
+        "url": "videos/upper_limb_dissection.mp4",
+        "description": "Step-by-step upper limb dissection."
+      },
+      {
+        "id": "dv002",
+        "title": "Abdominal Dissection",
+        "url": "videos/abdomen_dissection.mp4",
+        "description": "Exploring organs and vessels of the abdomen."
+      }
+    ],
+    "clinical_cases": [
+      {
+        "id": "case001",
+        "title": "Brachial Plexus Injury",
+        "description": "Patient with Erb’s palsy after birth trauma.",
+        "learning_points": ["Identify affected nerves", "Muscle weakness patterns"]
+      },
+      {
+        "id": "case002",
+        "title": "Myocardial Infarction Anatomy Correlation",
+        "description": "Understanding coronary artery blockage and affected heart regions.",
+        "learning_points": ["Coronary artery branches", "Wall segment affected by infarction"]
+      }
+    ],
+    "mnemonics": [
+      {
+        "id": "mn001",
+        "title": "Cranial Nerves",
+        "mnemonic": "On Old Olympus' Towering Top, A Finn And German Viewed Some Hops"
+      },
+      {
+        "id": "mn002",
+        "title": "Carpal Bones",
+        "mnemonic": "Some Lovers Try Positions That They Can’t Handle"
+      }
+    ],
+    "interactive_models": [
+      {
+        "id": "3d001",
+        "title": "3D Heart Model",
+        "url": "3d_models/heart.glb",
+        "description": "Interactive 3D heart for rotation and layer visualization."
+      },
+      {
+        "id": "3d002",
+        "title": "3D Skull Model",
+        "url": "3d_models/skull.glb",
+        "description": "Rotate and explore skull bones in 3D."
+      }
+    ]
+  }
+}

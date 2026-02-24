@@ -1,0 +1,795 @@
+/* --- Base Styles Provided By You --- */
+
+/* General Body Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding-top: 80px; /* Space for fixed header */
+    padding-bottom: 50px; /* Space for fixed footer */
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Header Banner */
+.main-header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.main-header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Main Content Container */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Page Title */
+.page-title {
+    text-align: center;
+    color: var(--secondary-color); /* Using red as requested */
+    margin-bottom: 40px;
+    font-size: 2.2em;
+    font-weight: bold;
+}
+
+/* Unified Card Grid */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* Unified Card Style */
+.card {
+    background-color: var(--card-background-color);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 2px solid var(--primary-color);
+    text-align: center;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    position: relative; /* Essential for visual identity system */
+    overflow: hidden;  /* Keeps watermarks inside */
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+.card h2 {
+    margin: 0;
+    font-size: 1.3em;
+    color: inherit;
+    position: relative; /* Ensures title is above watermarks */
+    z-index: 2;
+}
+
+/* Toolbar for buttons */
+.toolbar {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Footer */
+.main-footer {
+    background-color: var(--footer-background-color);
+    color: #6c757d;
+    padding: 15px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9em;
+    border-top: 1px solid #dee2e6;
+}
+
+/* --- Visual Identity System (Merged) --- */
+
+/* Stylish Back Button */
+.back-link {
+    display: inline-block;
+    margin-bottom: 25px;
+    background-color: transparent;
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+.back-link:hover {
+    background-color: var(--secondary-color);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Base style for icons/tags */
+.card h2::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    margin-right: 10px;
+    font-size: 0.9em;
+}
+.card.card--lesson h2::before {
+    content: "\f518"; /* book-open */
+}
+
+/* Quiz Card Identity */
+.card.card--quiz {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+.card.card--quiz h2::before {
+    content: "MCQs";
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 700;
+    padding: 3px 8px;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 0.7em;
+    vertical-align: middle;
+    margin-right: 12px;
+}
+
+/* Flashcards Deck Identity */
+.card.card--flashcards {
+    background-color: #7c3aed;
+    color: white;
+    border-color: #7c3aed;
+}
+.card.card--flashcards h2::before {
+    content: "\f24d"; /* clone */
+}
+
+/* Watermark Styles */
+.card.card--quiz::after,
+.card.card--flashcards::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-20deg);
+    font-size: 5rem;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.1);
+    z-index: 1;
+    pointer-events: none;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+.card.card--quiz::after {
+    content: "MCQS";
+}
+.card.card--flashcards::after {
+    content: "CARDS";
+}
+.lesson_nav {
+    width: 100%;
+    padding: 14px 24px;
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+    border-radius: 14px;
+    margin-bottom: 25px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+.lesson_nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.lesson_nav li {
+    display: flex;
+    align-items: center;
+}
+
+.lesson_nav li::after {
+    content: "/";
+    margin: 0 8px;
+    color: #94a3b8;
+    font-weight: 500;
+}
+
+.lesson_nav li:last-child::after {
+    content: "";
+}
+
+.lesson_nav a {
+    text-decoration: none;
+    color: #e2e8f0;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.lesson_nav a:hover {
+    background-color: rgba(255,255,255,0.08);
+    color: #38bdf8;
+}
+
+.lesson_nav li.active a {
+    background-color: #38bdf8;
+    color: #0f172a;
+    font-weight: 600;
+}
+.card-image img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+/* ===========================
+   Search Container
+=========================== */
+.search-container {
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+/* Input field */
+#searchBox {
+    flex: 1;
+    padding: 10px 12px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+/* Search button (icon) */
+.search-btn {
+    background-color: var(--primary, #003366); /* استخدام اللون الأساسي */
+    color: #fff;
+    border: none;
+    padding: 0 12px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s;
+}
+
+.search-btn:hover {
+    background-color: var(--secondary, #FFD700); /* تغيير اللون عند hover */
+}
+
+
+
+
+
+
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background: var(--bg-color);
+    color: var(--text-dark);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+/* Page Title */
+.page-title {
+    margin-bottom: 25px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+/* Search Section */
+.search-container {
+    margin: 30px auto 10px auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.search-container input {
+    width: 300px;
+    padding: 12px 14px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    outline: none;
+    transition: var(--transition);
+}
+
+.search-container input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px var(--primary-light);
+}
+
+.search-btn {
+    padding: 12px 16px;
+    border: none;
+    border-radius: var(--radius);
+    background: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.search-btn:hover {
+    background: var(--primary-hover);
+}
+
+/* Card Grid */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* University Card */
+.university-card {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.university-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--primary-color);
+}
+
+.university-card p {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.university-card strong {
+    color: var(--primary-color);
+}
+
+/* Footer */
+.main-footer {
+    margin-top: auto;
+    padding: 20px;
+    text-align: center;
+    background: white;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: var(--bg-main);
+    color: var(--text-dark);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ================= LAYOUT ================= */
+.container {
+    width: 92%;
+    max-width: 1300px;
+    margin: 50px auto;
+}
+
+.page-title {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+/* ================= GRID ================= */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 28px;
+}
+
+/* ================= CARD ================= */
+.card {
+    background: var(--bg-card);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+    border: 1px solid var(--border);
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* Dynamic Theme Border */
+.card::before {
+    content: "";
+    height: 5px;
+    width: 100%;
+    background: var(--primary, var(--primary-default));
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Hover */
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-hover);
+}
+
+/* ================= IMAGE ================= */
+.card-image {
+    height: 180px;
+    overflow: hidden;
+    background: #f1f5f9;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.card:hover .card-image img {
+    transform: scale(1.05);
+}
+
+/* ================= BODY ================= */
+.card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-body h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary, var(--primary-default));
+}
+
+.card-body small {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
+
+.card-body p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+/* ================= STATS ================= */
+.stats {
+    margin-top: 5px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* ================= TAGS ================= */
+.tags {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    background: rgba(79, 70, 229, 0.08);
+    color: var(--primary, var(--primary-default));
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+/* ================= LOADING / ERROR ================= */
+#universities-container {
+    min-height: 200px;
+}
+
+#universities-container div {
+    font-size: 1rem;
+}
+
+/* ================= FOOTER ================= */
+.main-footer {
+    margin-top: auto;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid var(--border);
+    background: white;
+    color: var(--text-muted);
+}
+/* ================= GENERAL ================= */
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: #f5f7fb;
+    color: #1e293b;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 92%;
+    max-width: 1300px;
+    margin: 40px auto;
+}
+
+/* ================= HEADER ================= */
+.main-header {
+    background: white;
+    padding: 18px 30px;
+    border-bottom: 1px solid #e2e8f0;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+}
+
+#site-title {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+/* ================= NAVIGATION ================= */
+#nav-container {
+    margin-bottom: 15px;
+}
+
+.back-link {
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: #4f46e5;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.back-link:hover {
+    color: #4338ca;
+}
+
+/* ================= BREADCRUMB ================= */
+.lesson_nav {
+    margin-top: 10px;
+}
+
+.lesson_nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.lesson_nav li {
+    font-size: 0.85rem;
+}
+
+.lesson_nav li a {
+    text-decoration: none;
+    color: #64748b;
+    padding: 6px 10px;
+    border-radius: 20px;
+    background: #f1f5f9;
+    transition: 0.3s;
+}
+
+.lesson_nav li a:hover {
+    background: #e0e7ff;
+    color: #4f46e5;
+}
+
+.lesson_nav li.active a {
+    background: #4f46e5;
+    color: white;
+}
+
+/* ================= PAGE TITLE ================= */
+.page-title {
+    margin: 20px 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+/* ================= TOOLBAR ================= */
+.toolbar {
+    margin-bottom: 20px;
+    min-height: 40px;
+}
+
+/* ================= GRID ================= */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+/* ================= LESSON CARD ================= */
+.card--lesson {
+    background: white;
+    border-radius: 14px;
+    text-decoration: none;
+    color: inherit;
+    padding: 25px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.card--lesson::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 6px;
+    height: 100%;
+    background: linear-gradient(to bottom, #4f46e5, #6366f1);
+}
+
+.card--lesson:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.card--lesson h2 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* ================= FOOTER ================= */
+.main-footer {
+    margin-top: auto;
+    padding: 20px;
+    text-align: center;
+    background: white;
+    border-top: 1px solid #e2e8f0;
+    font-size: 0.9rem;
+    color: #64748b;
+}
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.main-header {
+    background-color: var(--header-color);
+    color: #fff;
+    padding: var(--spacing-md);
+    text-align: center;
+    box-shadow: 0 2px 6px var(--card-shadow);
+}
+
+.main-footer {
+    background-color: var(--footer-color);
+    color: #fff;
+    padding: var(--spacing-md);
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: var(--spacing-lg);
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: var(--spacing-md);
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* Page title */
+.page-title {
+    font-size: var(--font-large);
+    margin-bottom: var(--spacing-lg);
+}
+
+/* Toolbar grid */
+.toolbar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+/* Lesson content */
+.lesson-content {
+    font-size: var(--font-base);
+    line-height: 1.6;
+}
+
+/* Card Styles */
+.card {
+    background-color: var(--card-bg);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 4px var(--card-shadow);
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px var(--card-hover-shadow);
+}
+
+.card--locked {
+    background-color: var(--locked-color);
+    color: #fff;
+}
+
+.card--premium-active {
+    background-color: var(--premium-active-color);
+    color: #000;
+}
+
+.card h2 {
+    margin: 0;
+    font-size: var(--font-large);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .toolbar {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    }
+}

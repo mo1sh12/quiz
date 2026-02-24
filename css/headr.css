@@ -1,0 +1,23 @@
+.main-header {
+    background-color: #4a90e2;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+#registerBtn {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    background-color: #007bff;
+}
+#registerBtn:hover {
+    background-color: #0056b3;
+}

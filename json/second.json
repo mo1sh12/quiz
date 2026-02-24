@@ -1,0 +1,149 @@
+{
+  "universities_data": [
+    {
+      "university_id": "cairo",
+      "faculties": [
+        {
+          "id": "Medicin",
+          "name": "Faculty of Medicine",
+          "years": [
+            {
+              "year": 1,
+              "name": "first year",
+              "terms": [
+                {
+                  "term": 1,
+                  "name": "term 1",
+                  "subjects": [
+                    {
+                      "id": "Anatomy",
+                      "name": "Anatomy",
+                      "code": "MED101",
+                      "credits": 4,
+                      "lecturer": "Dr. Ahmed Hassan"
+                    },
+                    {
+                      "id": "sub002",
+                      "name": "Biochemistry",
+                      "code": "MED102",
+                      "credits": 3,
+                      "lecturer": "Dr. Mona El-Sayed"
+                    }
+                  ]
+                },
+                {
+                  "term": 2,
+                  "name": "term 2",
+                  "subjects": [
+                    {
+                      "id": "sub003",
+                      "name": "Physiology",
+                      "code": "MED103",
+                      "credits": 4,
+                      "lecturer": "Dr. Khaled Mahmoud"
+                    },
+                    {
+                      "id": "sub004",
+                      "name": "Histology",
+                      "code": "MED104",
+                      "credits": 2,
+                      "lecturer": "Dr. Sara Nabil"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "year": 2,
+              "name": "second year",
+              "terms": [
+                {
+                  "term": 1,
+                  "subjects": [
+                    {
+                      "id": "sub005",
+                      "name": "Pathology",
+                      "code": "MED201",
+                      "credits": 4,
+                      "lecturer": "Dr. Hany Fawzy"
+                    }
+                  ]
+                },
+                {
+                  "term": 2,
+                  "subjects": [
+                    {
+                      "id": "sub006",
+                      "name": "Microbiology",
+                      "code": "MED202",
+                      "credits": 3,
+                      "lecturer": "Dr. Rana Adel"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "fac002",
+          "name": "Faculty of Engineering",
+          "years": [
+            {
+              "year": 1,
+              "terms": [
+                {
+                  "term": 1,
+                  "subjects": [
+                    {
+                      "id": "sub101",
+                      "name": "Calculus",
+                      "code": "ENG101",
+                      "credits": 3,
+                      "lecturer": "Dr. Sameh El-Taher"
+                    },
+                    {
+                      "id": "sub102",
+                      "name": "Physics",
+                      "code": "ENG102",
+                      "credits": 4,
+                      "lecturer": "Dr. Dina Fathy"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "university_id": "nub",
+      "faculties": [
+        {
+          "id": "fac010",
+          "name": "Faculty of Science",
+          "years": [
+            {
+              "year": 1,
+              "terms": [
+                {
+                  "term": 1,
+                  "subjects": [
+                    {
+                      "id": "sub201",
+                      "name": "General Chemistry",
+                      "code": "SCI101",
+                      "credits": 3,
+                      "lecturer": "Dr. Fatma Khalil"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

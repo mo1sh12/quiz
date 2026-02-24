@@ -1,0 +1,79 @@
+{
+  "examTitle": "Cardiovascular System Exam",
+  "id": "Cardiovascular",
+  "examDescription": "Questions assessing knowledge on Cardiovascular System Exam",
+  "questions": [
+    {
+      "id": 1,
+      "stem": "A couple comes to you following the diagnosis of trisomy 21 in their 18-week fetus. They ask what medical problems may be anticipated for a child who has Down syndrome. Of the following, the medical problem that is encountered most frequently in infants who have trisomy 21 is:",
+      "options": [
+        "Cardiac defect",
+        "Duodenal atresia",
+        "Hypotonia",
+        "Polycythemia"
+      ],
+      "correct": 2,
+      "explanation": "Down syndrome is characterized by several clinical features and associated anomalies. Among the neurological features, generalized hypotonia in the first two years of life is a key characteristic. While cardiac defects are common, affecting about 40% of cases, and duodenal atresia is also an associated anomaly, generalized hypotonia is a constant and prominent feature.",
+      "media": {
+        "image": "cairo.jpg",
+        "video": "",
+        "link": "https://www.nhs.uk/conditions/down-syndrome/",
+        "embedded": ""
+      }
+    },
+    {
+      "id": 2,
+      "stem": "Which congenital heart defect is most frequently associated with Down syndrome?",
+      "options": [
+        "Tetralogy of Fallot",
+        "Ventricular septal defect",
+        "Transposition of great arteries",
+        "Patent ductus arteriosus"
+      ],
+      "correct": 1,
+      "explanation": "Ventricular septal defect (VSD) is the most common congenital heart defect in Down syndrome, followed by atrioventricular septal defects.",
+      "media": {
+        "image": "images/vsd_echo.png",
+        "video": "VIDEO.mp4",
+        "link": "",
+        "embedded": ""
+      }
+    },
+    {
+      "id": 3,
+      "stem": "A 6-month-old infant with Down syndrome presents with hypotonia and poor feeding. Which of the following is the most common gastrointestinal anomaly in these infants?",
+      "options": [
+        "Duodenal atresia",
+        "Hirschsprung disease",
+        "Pyloric stenosis",
+        "Malrotation"
+      ],
+      "correct": 0,
+      "explanation": "Duodenal atresia occurs in about 5% of infants with Down syndrome and is the most common gastrointestinal anomaly in this population.",
+      "media": {
+        "image": "images/duodenal_atresia_xray.jpg",
+        "video": "",
+        "link": "https://www.ncbi.nlm.nih.gov/books/NBK562204/",
+        "embedded": ""
+      }
+    },
+    {
+      "id": 4,
+      "stem": "At birth, a neonate with trisomy 21 is noted to have hypotonia, a flat occiput, and a single palmar crease. What is the initial recommended screening test for thyroid dysfunction in this infant?",
+      "options": [
+        "TSH and free T4",
+        "Thyroid ultrasound",
+        "Anti-thyroid antibodies",
+        "Thyroid scintigraphy"
+      ],
+      "correct": 0,
+      "explanation": "Newborns with Down syndrome are at high risk for congenital hypothyroidism. The initial screening recommended is measurement of TSH and free T4 in the neonatal period.",
+      "media": {
+        "image": "",
+        "video": "",
+        "link": "https://www.aap.org/en/patient-care/thyroid-screening/",
+        "embedded": ""
+      }
+    }
+  ]
+}

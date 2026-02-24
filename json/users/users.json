@@ -1,0 +1,55 @@
+[
+  {
+    "name": "mm",
+    "phone": "01022222222",
+    "university": "cairo",
+    "faculty": "Medicin",
+    "year": "1",
+    "id": "1771888171175862",
+    "isActive": false,
+    "createdAt": "2026-02-23T23:09:31.175Z"
+  },
+  {
+    "name": "mm",
+    "phone": "01022222220",
+    "university": "cairo",
+    "faculty": "Medicin",
+    "year": "1",
+    "id": "1771888171176162",
+    "isActive": true,
+    "createdAt": "2026-02-23T23:09:31.176Z"
+  },
+  {
+    "name": "اليبابياب",
+    "phone": "01022222226",
+    "password": "324233432",
+    "university": "cairo",
+    "faculty": "Medicin",
+    "year": "1",
+    "id": "1771888171176645",
+    "isActive": true,
+    "createdAt": "2026-02-23T23:09:31.176Z"
+  },
+  {
+    "name": "يسلسليسل",
+    "phone": "01022222244",
+    "password": "ئؤ",
+    "university": "cairo",
+    "faculty": "Medicin",
+    "year": "1",
+    "id": "177188817117685",
+    "isActive": false,
+    "createdAt": "2026-02-23T23:09:31.176Z"
+  },
+  {
+    "id": "1771888203724",
+    "name": "بتتبيس",
+    "phone": "01022222290",
+    "password": "ببق544",
+    "university": "cairo",
+    "faculty": "Medicin",
+    "year": "1",
+    "isActive": false,
+    "createdAt": "2026-02-23T23:10:03.724Z"
+  }
+]

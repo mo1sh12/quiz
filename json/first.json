@@ -1,0 +1,71 @@
+{
+  "generatedAt": "2025-09-30T23:49:49.760Z",
+  "tree": {
+    "first1": {
+      "id": "cairo",
+      "slug": "cairo-university",
+      "name": "Cairo University",
+      "shortName": "CU",
+      "description": "Established 1908",
+      "image": "cairo.jpg",
+      "banner": "cairo-banner.jpg",
+      "icon": "cairo-icon.png",
+      "order": 1,
+      "isActive": true,
+      "tags": ["government", "medical"],
+      "theme": {
+        "primaryColor": "#1e293b",
+        "secondaryColor": "#FFD799"
+      },
+      "stats": {
+        "collegesCount": 20
+      },
+      "createdAt": "2026-02-20",
+      "updatedAt": "2026-02-23"
+    },
+    "first2": {
+              "id": "nub",
+      "slug": "nub-university",
+      "name": "nub University",
+      "shortName": "nub",
+      "description": "Established 1908",
+      "image": "nub.jpg",
+      "banner": "nub-banner.jpg",
+      "icon": "nub-icon.png",
+      "order": 1,
+      "isActive": true,
+      "tags": ["government", "medical"],
+      "theme": {
+        "primaryColor": "#003366",
+        "secondaryColor": "#FFD700"
+      },
+      "stats": {
+        "collegesCount": 20
+      },
+      "createdAt": "2026-02-20",
+      "updatedAt": "2026-02-23"
+    },
+    "first3": {
+              "id": "must",
+      "slug": "must-university",
+      "name": "must University",
+      "shortName": "must",
+      "description": "Established 1908",
+      "image": "must.jpg",
+      "banner": "must-banner.jpg",
+      "icon": "must-icon.png",
+      "order": 1,
+      "isActive": true,
+      "tags": ["government", "medical"],
+      "theme": {
+        "primaryColor": "#003366",
+        "secondaryColor": "#FFD700"
+      },
+      "stats": {
+        "collegesCount": 20
+      },
+      "createdAt": "2026-02-20",
+      "updatedAt": "2026-02-23"
+    }
+  }
+}

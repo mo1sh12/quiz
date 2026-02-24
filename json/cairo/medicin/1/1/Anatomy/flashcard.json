@@ -1,0 +1,81 @@
+{
+  "subject": "Pediatrics Basics",
+  "subjectId": "pediatrics_basics",
+  "university": "Cairo University",
+  "semester": "1",
+  "week": "1",
+  "resources": {
+    "flashcards": [
+      {
+        "id": "fc001",
+        "title": "Cranial Nerves Flashcards",
+        "cards": [
+          {
+            "front": "What is the normal heart rate for a 1-year-old child?",
+            "back": "Normal heart rate is 80–140 beats per minute."
+          },
+          {
+            "front": "Most common cause of bronchiolitis in infants?",
+            "back": "Respiratory Syncytial Virus (RSV)."
+          },
+          {
+            "front": "First-line treatment for acute otitis media?",
+            "back": "Amoxicillin 80–90 mg/kg/day divided BID for 7–10 days."
+          }
+        ]
+      },
+      {
+        "id": "fc002",
+        "title": "Bones of Upper Limb",
+        "cards": [
+          {
+            "front": "At what age is MMR vaccine first given?",
+            "back": "At 12 months of age."
+            
+          },
+          {
+            "front": "Number of doses for DTaP before 6 years?",
+            "back": "5 doses (2, 4, 6 months, 15–18 months, 4–6 years)."
+          }
+        ]
+      }
+    ],
+    "lessons": [
+      {
+        "id": "lesson001",
+        "title": "Introduction to Pediatrics",
+        "content": "Pediatrics is the branch of medicine dealing with children and their diseases..."
+      },
+      {
+        "id": "lesson002",
+        "title": "Growth and Development",
+        "content": "Normal growth and developmental milestones by age..."
+      }
+    ],
+    "reviews": [
+      {
+        "id": "review001",
+        "title": "Quick Revision: Week 1",
+        "content": "Key points: normal heart rate, RSV, otitis media treatment..."
+      }
+    ],
+    "exams": [
+      {
+        "id": "exam001",
+        "title": "Week 1 Quiz",
+        "questions": [
+          {
+            "question": "Most common cause of bronchiolitis?",
+            "options": ["Influenza", "RSV", "Adenovirus"],
+            "answer": "RSV"
+          },
+          {
+            "question": "Normal heart rate for 1-year-old?",
+            "options": ["60–100", "80–140", "100–160"],
+            "answer": "80–140"
+          }
+        ]
+      }
+    ]
+  }
+}

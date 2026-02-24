@@ -1,0 +1,81 @@
+:root {
+
+    /* Primary Colors */
+    --primary-color: #4f46e5;
+    --primary-hover: #4338ca;
+    --primary-light: #eef2ff;
+
+    /* Accent */
+    --accent-color: #22c55e;
+
+    /* Background */
+    --bg-color: #f5f7fb;
+    --card-bg: #ffffff;
+
+    /* Text */
+    --text-dark: #1e293b;
+    --text-light: #64748b;
+
+    /* Borders */
+    --border-color: #e2e8f0;
+
+    /* Shadows */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 6px 18px rgba(0, 0, 0, 0.08);
+
+    /* Radius */
+    --radius: 12px;
+
+    /* Transition */
+    --transition: 0.3s ease;
+}
+:root {
+
+    /* Global Palette */
+    --bg-main: #f4f7fb;
+    --bg-card: #ffffff;
+
+    --text-dark: #1e293b;
+    --text-muted: #64748b;
+
+    --border: #e2e8f0;
+
+    --primary-default: #4f46e5;
+    --primary-hover: #4338ca;
+
+    --radius: 14px;
+
+    --shadow-soft: 0 4px 15px rgba(0,0,0,0.05);
+    --shadow-hover: 0 10px 25px rgba(0,0,0,0.08);
+
+    --transition: 0.3s ease;
+}
+:root {
+    /* Primary colors */
+    --primary-color: #4A90E2; /* أزرق هادئ */
+    --secondary-color: #50E3C2; /* أخضر فاتح */
+    --background-color: #F5F7FA;
+    --text-color: #333;
+    --header-color: #2C3E50;
+    --footer-color: #34495E;
+
+    /* Card colors */
+    --card-bg: #ffffff;
+    --card-shadow: rgba(0, 0, 0, 0.1);
+    --card-hover-shadow: rgba(0, 0, 0, 0.2);
+    --locked-color: #E74C3C;
+    --premium-active-color: #F1C40F;
+
+    /* Font sizes */
+    --font-base: 16px;
+    --font-large: 1.25rem;
+    --font-small: 0.875rem;
+
+    /* Spacing */
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+
+    /* Border radius */
+    --border-radius: 12px;
+}

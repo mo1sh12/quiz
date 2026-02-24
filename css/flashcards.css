@@ -1,0 +1,311 @@
+/* Main Component Container - تصميم عصري بألوان فاتحة */
+.flashcard-master-container {
+    max-width: 600px;
+    margin: 25px auto;
+    background: linear-gradient(145deg, #ffffff 0%, #f8faff 100%);
+    border-radius: 32px;
+    box-shadow: 0 20px 40px rgba(0, 20, 60, 0.15), 0 2px 10px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(255, 255, 255, 0.8) inset;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Header - تصميم أنيق بألوان فاتحة */
+.flashcard-header {
+    padding: 20px 25px;
+    position: relative;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.7);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.counter {
+    color: #4a5b7a;
+    font-size: 0.95em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: rgba(108, 92, 231, 0.1);
+    padding: 6px 16px;
+    border-radius: 40px;
+    display: inline-block;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(108, 92, 231, 0.2);
+}
+
+.progress-bar {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #6c5ce7, #a463f5, #ff8a5c, #ff6b6b);
+    width: 0%;
+    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 0 4px 4px 0;
+    box-shadow: 0 0 15px rgba(108, 92, 231, 0.3);
+}
+
+/* Card Scene & Faces - تصميم حديث بألوان الباستيل */
+.flashcard-scene {
+    width: 100%;
+    height: 350px;
+    perspective: 2000px;
+    padding: 25px 25px 20px 25px;
+    box-sizing: border-box;
+}
+
+.flashcard {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.7s cubic-bezier(0.34, 1.56, 0.64, 1);
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.flashcard.is-flipped {
+    transform: rotateY(180deg);
+}
+
+.flashcard-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    color: #1e2b3f;
+    font-size: 1.7em;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 28px;
+    background: linear-gradient(135deg, #ffffff, #f0f4ff);
+    box-shadow: 0 15px 35px rgba(108, 92, 231, 0.15), 0 2px 8px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(255, 255, 255, 0.9) inset;
+    line-height: 1.6;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.flashcard-face:hover {
+    transform: scale(1.02);
+    box-shadow: 0 25px 45px rgba(108, 92, 231, 0.2), 0 0 0 3px rgba(255, 255, 255, 0.9) inset;
+    background: linear-gradient(135deg, #ffffff, #f5f9ff);
+}
+
+.flashcard-back {
+    transform: rotateY(180deg);
+    font-size: 1.2em;
+    align-items: flex-start;
+    text-align: left;
+    overflow-y: auto;
+    background: linear-gradient(135deg, #f8faff, #eef3ff);
+    color: #2a3b5a;
+    scrollbar-width: thin;
+    scrollbar-color: #a5b4cb #eef3ff;
+    border: 1px solid rgba(108, 92, 231, 0.1);
+}
+
+/* تخصيص شريط التمرير للوجه الخلفي */
+.flashcard-back::-webkit-scrollbar {
+    width: 6px;
+}
+
+.flashcard-back::-webkit-scrollbar-track {
+    background: #eef3ff;
+    border-radius: 10px;
+}
+
+.flashcard-back::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #a5b4cb, #8a9bb8);
+    border-radius: 10px;
+    border: 2px solid #eef3ff;
+}
+
+.flashcard-back::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #8a9bb8, #6c5ce7);
+}
+
+/* Footer & Controls - تصميم عصري بألوان الباستيل */
+.flashcard-footer {
+    padding: 20px 25px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(108, 92, 231, 0.1);
+}
+
+.nav-arrow {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(108, 92, 231, 0.2);
+    color: #4a5b7a;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 12px 18px;
+    transition: all 0.3s ease;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 10px rgba(108, 92, 231, 0.1);
+}
+
+.nav-arrow:hover:not(:disabled) {
+    background: linear-gradient(135deg, #ffffff, #f0f4ff);
+    border-color: rgba(108, 92, 231, 0.4);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(108, 92, 231, 0.2);
+    color: #6c5ce7;
+}
+
+.nav-arrow:active:not(:disabled) {
+    transform: translateY(-1px) scale(1.02);
+    box-shadow: 0 4px 12px rgba(108, 92, 231, 0.15);
+}
+
+.nav-arrow:disabled {
+    background: rgba(240, 244, 255, 0.5);
+    border-color: rgba(0, 0, 0, 0.05);
+    color: rgba(74, 91, 122, 0.3);
+    cursor: not-allowed;
+    opacity: 0.6;
+    box-shadow: none;
+}
+
+.flip-icon {
+    font-size: 2em;
+    background: linear-gradient(135deg, #6c5ce7, #a463f5, #ff8a5c);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 25px rgba(108, 92, 231, 0.3), 0 2px 0 rgba(255, 255, 255, 0.5) inset;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.flip-icon:hover {
+    transform: rotate(180deg) scale(1.15);
+    box-shadow: 0 12px 30px rgba(108, 92, 231, 0.4), 0 2px 0 rgba(255, 255, 255, 0.7) inset;
+    background: linear-gradient(135deg, #7c6cf0, #b57cff, #ff9b75);
+}
+
+/* --- Responsive Design للجوال --- */
+@media (max-width: 600px) {
+    .flashcard-master-container {
+        margin: 15px;
+        border-radius: 28px;
+    }
+    
+    .flashcard-scene {
+        height: 280px;
+        padding: 20px 20px 15px 20px;
+    }
+    
+    .flashcard-face {
+        font-size: 1.3em;
+        padding: 20px;
+        border-radius: 24px;
+    }
+    
+    .flashcard-back {
+        font-size: 1em;
+    }
+    
+    .flashcard-header {
+        padding: 15px 20px;
+    }
+    
+    .counter {
+        font-size: 0.85em;
+        padding: 4px 12px;
+    }
+    
+    .flashcard-footer {
+        padding: 15px 20px;
+    }
+    
+    .nav-arrow {
+        width: 40px;
+        height: 40px;
+        font-size: 1.3em;
+        padding: 8px 12px;
+    }
+    
+    .flip-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.6em;
+    }
+}
+
+/* تحسينات للشاشات الصغيرة جداً */
+@media (max-width: 380px) {
+    .flashcard-scene {
+        height: 250px;
+    }
+    
+    .flashcard-face {
+        font-size: 1.1em;
+        padding: 15px;
+    }
+    
+    .flashcard-footer {
+        padding: 12px 15px;
+    }
+}
+
+/* تأثيرات حركية إضافية */
+@keyframes softPulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(108, 92, 231, 0.2);
+    }
+    70% {
+        box-shadow: 0 0 0 12px rgba(108, 92, 231, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(108, 92, 231, 0);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.flashcard-face:active {
+    animation: softPulse 0.4s ease;
+}
+
+.flashcard-footer .flip-icon {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* إضافة تأثير لمعان خفيف */
+.flashcard-face::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 28px;
+    background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.4), transparent 70%);
+    pointer-events: none;
+}
